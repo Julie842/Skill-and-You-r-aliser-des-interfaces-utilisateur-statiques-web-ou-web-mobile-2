@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mettre en forme un sommaire</title>
+        <style>
+            img {width: 200px;}
+            figure { 
+                width: calc(210px * 4);
+                border: 1px solid rgba(76,125,104,1); padding: 10px;
+                box-shadow: 10px 5px 5px rgba(76,125,104,1);
+            }
+            figcaption {
+                font-family: cursive; font-size: 2em;}
+            .animal {
+                display: inline-block; width : 200px; cursor : help;
+                margin-left: 10px; opacity: 0.5;
+                border: 1px solid rgba(85,85,127,0); box-sizing: border-box;
+                vertical-align: top;
+            }
+            .animal:hover {
+                opacity: 1;
+                border: 1px solid rgba(85,85,127,1);
+                box-shadow: 10px 5px 5px rgba(85,85,127,1)
+            }
+            p {
+                visibility: hidden;
+                width: 185px; padding-left: 5px; padding-right: 5px; 
+            }
+            .animal:hover p {
+                visibility: visible;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <figure>
+            <figcaption>Les animaux sauvages</figcaption>
+            <div class="animal">
+                <img src="images/singe.jpg" alt="Singe" title="Singe"/>
+                <p>Le singe est un mammifère de la famille des primates, reconnu pour son agilité et sa capacité à grimper aux arbres avec facilité.</p>
+            </div><div class="animal">
+                <img src="images/girafe.jpg" alt="Girafe" title="Girafe"/>
+                <p> La girafe est un animal emblématique de la savane africaine doté d'un long cou et de grandes jambes, présenté comme le plus grand animal terrestre existant.</p>
+            </div><div class="animal">
+                <img src="images/éléphant.jpg" alt="Eléphant" title="Eléphant"/>
+                <p>  L'éléphant est le plus grand mammifère terrestre vivant, caractérisé par sa taille imposante, ses défenses et sa trompe flexible.</p>
+            </div><div class="animal">
+                <img src="images/lion.jpg" alt="Lion" title="Lion"/>
+                <p>Le lion est un grand félin souvent appelé « roi de la jungle », remarquable par sa crinière majestueuse et sa force impressionnante.</p>
+            </div>
+        </figure>
+    </body>
+</html>
